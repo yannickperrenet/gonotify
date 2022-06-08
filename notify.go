@@ -10,8 +10,8 @@ import (
 func main() {
     conn, err := dbus.ConnectSessionBus()
     if err != nil {
-		panic(err)
-	}
+        panic(err)
+    }
     defer conn.Close()
 
     // Get the Object identified by path "/org/freedesktop/Notifications"
